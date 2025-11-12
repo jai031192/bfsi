@@ -7,7 +7,7 @@ from livekit.plugins import noise_cancellation, silero
 # Turn detection plugin caused runtime issues; we'll rely on default behavior/VAD for now.
 
 # Load environment variables from .env.local first, then fallback to .env
-loaded = load_dotenv(".env.local")
+loaded = load_dotenv(".env")
 if not loaded:
     load_dotenv(".env")
 
@@ -150,7 +150,7 @@ If requested data not accessible:
 “Currently I cannot retrieve that information. I can escalate or you may check your dashboard reports. Which do you prefer?”
 
 Initial Greeting (inbound voice):
-“Hi, you’ve reached the support assistant for <COMPANY_NAME>. How can I help you today?”
+“Hi, you’ve reached the support assistant for bfsi. How can I help you today?”
 
 Outbound KYC Reminder:
 “Hi, we noticed your KYC is still pending. Would you like help completing it now?”
